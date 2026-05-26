@@ -26,7 +26,7 @@ body{
 
 }
 /*definindo a largura da página*/
-header, main, footes{
+header, main, footer{
     width: 840px;
     margin: 0 auto;
 }
@@ -42,8 +42,7 @@ nav, p, section, article{
     margin: 16px;
     padding: 8px;
 
-}*removendo os sublinhados dos links de imagens*/
-/
+}/*removendo os sublinhados dos links de imagens*/
 .redes-sociais a {
     text-decoration: none;
 }
