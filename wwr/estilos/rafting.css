@@ -46,17 +46,20 @@ nav, p, section, article{
 .redes-sociais a {
     text-decoration: none;
 }
-.hero{
+.hero {
     position: relative;
 }
+
 .hero img {
     display: block;
     width: 100%;
-    height:auto;
+    height: auto;
 }
-h1 {
+
+.hero h1 {
     position: absolute;
     top: 20px;
+    left: 0;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -64,8 +67,18 @@ h1 {
     background-color: var(--cor-destaque1);
     color: #fff;
 }
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 12px;
+}
+
 .hero article img {
     float: right;
     width: 125px;
-
+    margin: 8px;
 }
