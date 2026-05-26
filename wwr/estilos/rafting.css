@@ -35,6 +35,7 @@ h1, h2{
     font-family: var(--fonte-titulo);
     color: var(--cor-primaria);
     text-align: center;
+    position: absolute;
 }
 /*Definindo estilos básicos em conjunto*/
 nav, p, section, article{
@@ -64,7 +65,7 @@ h1 {
     background-color: var(--cor-destaque1);
     color: #fff;
 }
-.hero articleimg {
+.hero article img {
     float: right;
     width: 125px;
 
