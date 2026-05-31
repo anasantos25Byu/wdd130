@@ -25,8 +25,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  gap: 1rem;
-  padding: 0.5rem;
+  /*gap: 1rem;*/
+  padding: 1rem;
 }
 
 nav a {
@@ -58,6 +58,10 @@ h1 {
   box-shadow: 0 0 15px gray;
   float: right;
   margin: 1rem;
+  /*display: block;
+  margin-left: 0;
+  width: 200px;*/
+
 }
 
 /* Texto */
@@ -72,14 +76,19 @@ aside {
   position:relative;
   grid-column: 1/2;
   grid-row: 1/2;
-  text-align: center;
-  margin: 1rem auto;
+  /*text-align: center;
+  margin: 1rem auto;*/
 }
 
 aside img {
   width: 150px;
   height: auto;
   margin-bottom: 1rem;
+}
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
 }
 
 /* Footer */
@@ -95,7 +104,7 @@ header, footer {
 }
 
 
-/* Classes utilitárias */
+/* Seletores de Classe */
 .caixa {
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
@@ -103,6 +112,7 @@ header, footer {
   background-color: var(--cor-secundaria);
  /* color: #000;*/
 }
+
 .img-perfil {
     display: block;
     margin-left: 0;
@@ -118,7 +128,9 @@ main {
   margin: 1rem;
 }
     
-
+main img {
+  float: right;
+}
 
 .indentacao {
   padding-left: 1rem;
