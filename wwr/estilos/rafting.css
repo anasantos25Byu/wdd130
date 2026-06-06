@@ -1,84 +1,158 @@
-/*reseta o CSS */
+/* Reseta o CSS */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Variáveis de cor */
 :root {
-  --cor-primaria: #055a05;/* verde-floresta*/
-  --cor-secundaria: #f4a261;/*bege médio*/
-  --cor-destaque1: #26453; /*azul-escuro*/
-  --cor-destaque2: #e9c46a; /*aamarelo-claro*/
-  --fonte-titulo: "Times New Roman", "Georgia", serif;
-  --fonte-body: Arial, Helvetica, sans-serif;
+    --cor-primaria: #055a05;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #e9c46a;
 }
-/* estilizando */
-header{
-    background-color: var(--cor-primaria);
-    color: var(--cor-destaque2);
-}
-/*estilizando o texto do elemento body*/
-body{
-    font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-destaque1);
+    background-color: #ffffff;
 }
-/*definindo a largura da página*/
-header, main, footer{
+
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
-/*estilizando os titulos*/
-h1, h2{
-    font-family: var(--fonte-titulo);
-    color: var(--cor-primaria);
-    text-align: center;
-    position: absolute;
-}
-/*Definindo estilos básicos em conjunto*/
-nav, p, section, article{
-    margin: 16px;
-    padding: 8px;
 
-}/*removendo os sublinhados dos links de imagens*/
-.redes-sociais a {
-    text-decoration: none;
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--cor-primaria);
+    padding: 1rem;
 }
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+header nav a {
+    color: var(--cor-destaque2);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+
 .hero {
     position: relative;
+    margin-top: 1rem;
 }
 
-.hero img {
-    display: block;
+.hero > img {
     width: 100%;
-    height: auto;
+    display: block;
 }
 
 .hero h1 {
-    position: absolute;
+    /*position: absolute;*/
     top: 20px;
-    left: 0;
     width: 100%;
-    padding: 16px;
+    padding: 1rem;
     text-align: center;
-    opacity: 0.7;
-    background-color: var(--cor-destaque1);
-    color: #fff;
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
 }
 
 .hero article {
-    position: absolute;
+    /*position: absolute;*/
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255,255,255,0.8);
-    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 1rem;
 }
 
 .hero article img {
     float: right;
-    width: 125px;
-    margin: 8px;
+    width: 130px;
+    margin-left: 1rem;
+}
+
+.hero article p,
+.historia-conteudo p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.historia,
+.aventuras {
+    padding: 2rem 0;
+}
+
+.historia h2,
+.aventuras h2 {
+    text-align: center;
+    color: var(--cor-primaria);
+    margin-bottom: 1.5rem;
+}
+
+.historia-conteudo {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.historia-conteudo img {
+    width: 100%;
+}
+
+.galeria-aventuras {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+}
+
+.galeria-aventuras figure {
+    text-align: center;
+}
+
+.galeria-aventuras img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+    padding: 1rem;
+}
+
+.sociallinks {
+    display: flex;
+    gap: 1rem;
+}
+
+.sociallinks img {
+    width: 32px;
+    height: 32px;
 }
