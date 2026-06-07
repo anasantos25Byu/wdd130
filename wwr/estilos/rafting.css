@@ -156,3 +156,122 @@ footer {
     width: 32px;
     height: 32px;
 }
+
+/* Página Contato */
+
+main h1 {
+    color: var(--cor-primaria);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.informacoes-contato,
+.formulario-contato {
+    background-color: #f7f7f7;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.informacoes-contato h2,
+.formulario-contato h2,
+.funcionarios h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.informacoes-contato p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+iframe {
+    border: 0;
+    margin-top: 1rem;
+}
+
+.item-formulario {
+    display: grid;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.item-formulario label,
+.formulario-contato legend {
+    font-weight: bold;
+}
+
+.item-formulario input,
+.item-formulario textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario-contato fieldset {
+    border: 1px solid #bbb;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.formulario-contato fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.newsletter {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.formulario-contato button {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.3rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contato button:hover {
+    background-color: #033d03;
+}
+
+.funcionarios {
+    margin: 2rem 0;
+}
+
+.equipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.equipe-grid figure {
+    text-align: center;
+}
+
+.equipe-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.equipe-grid figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
