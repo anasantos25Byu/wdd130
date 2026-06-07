@@ -20,64 +20,33 @@
     <main>
 
         <form>
-
             <fieldset>
                 <legend>Informações de Contato</legend>
-
-                <div class="form-item">
-                    <label for="nome-completo">Nome Completo:</label>
-                    <input type="text" id="nome-completo" name="nome-completo" required>
-                </div>
-
-                <div class="form-item">
-                    <label for="emaildousuario">Email:</label>
-                    <input type="email" id="emaildousuario" name="emaildousuario" required>
-                </div>
+                <div class="item-formulario coluna2"> <label for="nome-completo">Nome Completo:</label> <input
+                        type="text" id="nome-completo" name="nome-completo" required> </div>
+                <div class="item-formulario coluna2"> <label for="emaildousuario">E-mail:</label> <input type="email"
+                        id="emaildousuario" name="emaildousuario" required> </div>
             </fieldset>
-
             <fieldset>
                 <legend>Perguntas</legend>
-
-                <div class="form-item">
-                    <label for="navegador">
-                        Qual é o seu navegador de internet favorito?
-                    </label>
-
-                    <select id="navegador" name="navegador">
+                <div class="item-formulario coluna1"> <label for="navegador"> Qual é o seu navegador de internet
+                        favorito?
+                    </label> <select id="navegador" name="navegador">
                         <option value="chrome">Chrome</option>
                         <option value="firefox">Firefox</option>
                         <option value="edge">Edge</option>
                         <option value="safari">Safari</option>
                         <option value="brave">Brave</option>
                         <option value="outro">Outro</option>
-                    </select>
-                </div>
-
-                <div class="form-item">
-                    <label for="pet">
-                        Você tem um animal de estimação?
-                    </label>
-
-                    <input type="checkbox" id="pet" name="pet">
-                </div>
-
-                <div class="form-item">
-                    <label for="feedback">
-                        Liste os lugares onde você morou:
-                    </label>
-
+                    </select> </div>
+                <div class="item-formulario coluna1"> <label for="pet"> Você tem um animal de estimação? </label> <input
+                        type="checkbox" id="pet" name="pet"> </div>
+                <div class="item-formulario"> <label for="feedback"> Liste os lugares onde você morou: </label>
                     <textarea id="feedback" name="feedback" rows="4"
-                        placeholder="Stillwater Flórida,&#10;Amsterdam Holanda,&#10;Timbuktu Mali"></textarea>
+                        placeholder="Stillwater Flórida, Amsterdam Holanda, Timbuktu Mali"></textarea>
                 </div>
-
-            </fieldset>
-
-            <button type="submit">
-                Enviar Enquete
-            </button>
-
+            </fieldset> <button type="submit"> Enviar Enquete </button>
         </form>
-
     </main>
 
     <footer>
