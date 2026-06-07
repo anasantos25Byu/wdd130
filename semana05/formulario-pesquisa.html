@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML - Enquete do Usuário</title>
+    <meta name="description" content="Formulário de pesquisa do usuário">
+    <meta name="author" content="Ana Suely Côrtes Santos">
+
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>WDD 130 | Formulário HTML - Enquete do Usuário</h1>
+    </header>
+
+    <main>
+
+        <form>
+
+            <fieldset>
+                <legend>Informações de Contato</legend>
+
+                <div class="form-item">
+                    <label for="nome-completo">Nome Completo:</label>
+                    <input type="text" id="nome-completo" name="nome-completo" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="emaildousuario">Email:</label>
+                    <input type="email" id="emaildousuario" name="emaildousuario" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perguntas</legend>
+
+                <div class="form-item">
+                    <label for="navegador">
+                        Qual é o seu navegador de internet favorito?
+                    </label>
+
+                    <select id="navegador" name="navegador">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="safari">Safari</option>
+                        <option value="brave">Brave</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="pet">
+                        Você tem um animal de estimação?
+                    </label>
+
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+
+                <div class="form-item">
+                    <label for="feedback">
+                        Liste os lugares onde você morou:
+                    </label>
+
+                    <textarea id="feedback" name="feedback" rows="4"
+                        placeholder="Stillwater Flórida,&#10;Amsterdam Holanda,&#10;Timbuktu Mali"></textarea>
+                </div>
+
+            </fieldset>
+
+            <button type="submit">
+                Enviar Enquete
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            ©2025 | Formulário HTML - Atividade de Enquete do Usuário |
+            Ana Suely Côrtes Santos
+        </p>
+    </footer>
+
+</body>
+
+</html>
+```
