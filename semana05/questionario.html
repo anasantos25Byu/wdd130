@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário HTML e CSS | WDD 130</title>
+    <meta name="description" content="Questionário online sobre conceitos básicos de HTML e CSS.">
+    <meta name="author" content="Ana Suely Côrtes Santos">
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Questionário Online sobre HTML e CSS</h1>
+    </header>
+
+    <main>
+        <form>
+
+            <div class="item-formulario">
+                <label for="q1">
+                    1. Complete: A tag usada para criar um parágrafo em HTML é:
+                </label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+
+            <div class="item-formulario">
+                <label for="q2">
+                    2. Explique com suas palavras para que serve o CSS em uma página web:
+                </label>
+                <textarea id="q2" name="q2" rows="5" required></textarea>
+            </div>
+
+            <div class="item-formulario">
+                <label for="q3">
+                    3. Qual propriedade CSS é usada para alterar a cor do texto?
+                </label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Escolha uma...</option>
+                    <option value="color">color</option>
+                    <option value="background-color">background-color</option>
+                    <option value="font-size">font-size</option>
+                    <option value="margin">margin</option>
+                </select>
+            </div>
+
+            <div class="item-formulario">
+                <label for="q4">
+                    4. Quantos níveis principais de títulos existem em HTML, de h1 até h6?
+                </label>
+                <input type="number" id="q4" name="q4" required>
+            </div>
+
+            <button type="submit">Enviar Questionário</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Questionário HTML e CSS | Ana Suely Côrtes Santos</p>
+    </footer>
+
+</body>
+
+</html>
