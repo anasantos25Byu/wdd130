@@ -6,7 +6,8 @@
 }
 
 :root {
-    --cor-primaria: #055a05;
+/*    --cor-primaria: #055a05;*/    
+    --cor-primaria:  #3f84b8;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
 }
@@ -274,4 +275,193 @@ iframe {
 .equipe-grid figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
+}
+
+/* Página Inicial */
+
+.home-hero {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+}
+
+.home-hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(38, 70, 83, 0.85);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    width: 75%;
+}
+
+.home-hero-texto h1 {
+    color: white;
+    margin-bottom: 0.8rem;
+}
+
+.newsletter,
+.chamada-passeios {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.newsletter-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 1rem;
+    align-items: end;
+    margin-top: 1rem;
+}
+
+.newsletter-form .item-formulario {
+    display: grid;
+    text-align: left;
+    gap: 0.4rem;
+}
+
+.newsletter-form input {
+    padding: 0.7rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+.newsletter-form button,
+.botao-acao {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.newsletter-form button:hover,
+.botao-acao:hover {
+    background-color: #033d03;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.home-grid div {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.home-grid h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.8rem;
+}
+
+.home-grid p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Página Passeios */
+
+.passeios-hero {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.passeios-hero h1 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.passeios-hero p {
+    margin-bottom: 1rem;
+}
+
+.passeios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.passeio-card {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.passeio-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.passeio-card h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.8rem;
+}
+
+.passeio-card p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.tabela-passeios {
+    margin: 2rem 0;
+}
+
+.tabela-passeios h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tabela-passeios table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-passeios th,
+.tabela-passeios td {
+    border: 1px solid #999;
+    padding: 0.8rem;
+    text-align: center;
+}
+
+.tabela-passeios thead {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.tabela-passeios tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
