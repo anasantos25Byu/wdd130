@@ -233,7 +233,7 @@ iframe {
 }
 
 .formulario-contato fieldset label {
-    display: block;
+    display: inline;
     margin: 0.5rem 0;
 }
 
@@ -470,4 +470,12 @@ iframe {
 
 .tabela-passeios tbody tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+.radio-item {
+    margin: 8px 0;
+}
+
+.radio-item input,
+.radio-item label {
+    display: inline;
 }
