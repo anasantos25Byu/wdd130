@@ -148,12 +148,12 @@ footer {
     padding: 1rem;
 }
 
-.sociallinks {
+.redes-sociais {
     display: flex;
     gap: 1rem;
 }
 
-.sociallinks img {
+.redes-sociais img {
     width: 32px;
     height: 32px;
 }
