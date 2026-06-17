@@ -5,13 +5,19 @@
     box-sizing: border-box;
 }
 
-:root {
-/*    --cor-primaria: #055a05;*/    
+/*:root {
+    --cor-primaria: #055a05; 
     --cor-primaria:  #3f84b8;
     --cor-destaque1: #264653;
     --cor-destaque2: #e9c46a;
+}*/
+:root {
+    --cor-primaria: #055a05;
+    --cor-secundaria: #f7f7f7;
+    --cor-destaque1: #264653;
+    --cor-destaque2: #ffffff;
+    --cor-azul: #1f4e79;
 }
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--cor-destaque1);
